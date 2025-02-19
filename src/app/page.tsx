@@ -1,8 +1,43 @@
+import { LoginForm } from "@/components/login-form";
+import { GalleryVerticalEnd } from "lucide-react";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+    <div className="grid min-h-svh lg:grid-cols-2">
+      <div className="flex flex-col gap-4 p-6 md:p-10">
+        <div className="flex justify-center gap-2 md:justify-start">
+          <a href="#" className="flex items-center gap-2 font-medium text-primary">
+            <div className="flex h-6 w-6 items-center justify-center rounded-md text-primary-foreground">
+            <Image
+            aria-hidden
+            src="/icon-auxsolar.png"
+            alt="aux solar"
+            width={20}
+            height={20}
+            />
+            </div>
+            aux solar
+          </a>
+        </div>
+        <div className="flex flex-1 items-center justify-center">
+          <div className="w-full max-w-xs">
+            <LoginForm />
+          </div>
+        </div>
+      </div>
+      <div className="relative hidden bg-muted lg:block">
+        <img
+          src="/placeholder.svg"
+          alt="Image"
+          className="absolute inset-0 h-full w-full object-cover dark:brightness-[0.2] dark:grayscale"
+        />
+      </div>
+    </div>
+  )
+}
+   
+   /*<div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
         <Image
           className="dark:invert"
@@ -98,4 +133,4 @@ export default function Home() {
       </footer>
     </div>
   );
-}
+} */
