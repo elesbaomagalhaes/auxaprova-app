@@ -1,0 +1,6 @@
+{
+    "buildCommand": "npm run build",
+    "routes": [
+        { "src": "/api/(.*)", "dest": "/api/index.js" }
+      ]
+  }
