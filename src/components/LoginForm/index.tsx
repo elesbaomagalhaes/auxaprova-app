@@ -9,11 +9,11 @@ export function LoginForm({
 }: React.ComponentPropsWithoutRef<"form">) {
   return (
     <main>
-    <form className={cn("flex flex-col gap-6", className)} {...props}>
+    <form className={cn("flex flex-col gap-10", className)} {...props}>
       <div className="flex flex-col items-center gap-2 text-center">
-        <h1 className="text-2xl font-bold">Bem Vindo de Volta</h1>
+        <h1 className="text-3xl font-bold">Login</h1>
         <p className="text-balance text-sm text-muted-foreground">
-          para continuar entre com suas credenciais
+          Olá, seja bem vindo!
         </p>
       </div>
       <div className="grid gap-6">
@@ -28,7 +28,7 @@ export function LoginForm({
               href="#"
               className="ml-auto text-sm underline-offset-4 hover:underline"
             >
-              recuperar senha?
+              Esqueceu a senha?
             </a>
           </div>
           <Input id="password" type="password" required />
